@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* 黒を基調とした、ArchやOpSecの雰囲気に合う硬派でシンプルなデザイン */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #ffffff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #00adb5; /* アクセントカラー（サイバー風の青緑） */
+            margin-top: 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+        li::before {
+            content: "> ";
+            color: #00adb5;
+            position: absolute;
+            left: 0;
+        }
+        .tag {
+            background-color: #222831;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hello, World.</h1>
+    <p>普通の高校生です。</p>
+
+    <h2>About Me</h2>
+    <ul>
+        <li><strong>興味のある分野:</strong> Linux, coding, OpSec, Privacy</li>
+    </ul>
+
+    <h2>Upcoming Posts (予定している記事)</h2>
+    <ul>
+        <li><span class="tag">Arch Linux</span> インストールからHyprland導入、日本語入力(Fcitx5)までの構築手順</li>
+        <li><span class="tag">GrapheneOS</span> Pixelへの導入とDe-googled環境でのアプリ運用</li>
+        <li><span class="tag">Windows</span> 普段使いのためのOpSec（運用セキュリティ）設定方針</li>
+    </ul>
+</div>
+
+</body>
+</html>
